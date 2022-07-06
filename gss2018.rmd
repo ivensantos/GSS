@@ -26,10 +26,18 @@ source("GrabData.R")
 The data in the dataframe GSSdata is from the 2018 General Social Survey. The first blocks of R-code has selected down a subset of the data to just 16 variables. It has further removed unwanted factor levels in much of the data. Examine the code in the GrabData.R file to see what it is doing. Some of the variables are categorical and others are numerical. Be sure to do a variable analysis before tackling each question.  
 First question - Is opinion on the death penalty (CAPPUN) independent of gun ownership (OWNGUN)?
 
+$H0$: the null hypothesis
+
+$H_A$: the alternative hypothesis
 
 ## Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
+
+both variables are categorical; each with 2 levels... OWNGUN YES/NO
+
+so we use a Cat~Cat analysis
+Chi squared test of independence, fisher exact test for odds ratio
 
 ##Results
 
